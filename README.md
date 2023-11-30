@@ -39,7 +39,7 @@ This project follows the description of the [Deep Q Learning algorithm](https://
 
 # Network Architecture
 
-"Working directly with raw Atari frames, which are 210 × 160 (in our case it depends on pygame screen) pixel images with a 128 color palette, can be computationally demanding, so we apply a basic preprocessing step aimed at reducing the input dimensionality. The raw frames are preprocessed by first converting their RGB representation to gray-scale and down-sampling it to a 84×84 image.As input Q-Network is preprocessing to the last 4 frames of a history and stacks them to produce the input to the Q-function.This process can be visualized as the following figure:
+Working directly with raw Atari frames, which are 210 × 160 (in our case it depends on pygame screen) pixel images with a 128 color palette, can be computationally demanding, so we apply a basic preprocessing step aimed at reducing the input dimensionality. The raw frames are preprocessed by first converting their RGB representation to gray-scale and down-sampling it to a 84×84 image.As input Q-Network is preprocessing to the last 4 frames of a history and stacks them to produce the input to the Q-function.This process can be visualized as the following figure:
 
 ![a0](https://user-images.githubusercontent.com/23141486/50234733-63d83600-03c7-11e9-9ecb-67617efefb64.jpeg)![a1](https://user-images.githubusercontent.com/23141486/50234736-63d83600-03c7-11e9-9a20-da116e518b31.jpeg)![a2](https://user-images.githubusercontent.com/23141486/50234737-6470cc80-03c7-11e9-8136-60523fb67ed7.jpeg)![a3](https://user-images.githubusercontent.com/23141486/50234740-663a9000-03c7-11e9-938a-82e82fdaac4c.jpeg)
 
